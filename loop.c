@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "shell.h"
 /**
  * loop - loop of shell
  *
@@ -12,7 +12,7 @@ int stat;
 
 do {
 printf("$ ");
-line = readline();
+l = readline();
 args = splitline(l);
 status = execute(args);
 free(l);
