@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "shell.h"
 #define LSH_TOK_BUFSIZE 64
 #define LSH_TOK_DELIM " \t\r\n\a"
 /**
@@ -19,7 +19,7 @@ if (!tokens)
 perror("error\n");
 exit(98);
 }
-token = strtok(line, LSH_TOK_DELIM);
+token = strtok(l, LSH_TOK_DELIM);
 while (token != NULL)
 {
 tokens[pos] = token;
