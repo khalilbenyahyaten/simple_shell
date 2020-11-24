@@ -1,3 +1,5 @@
+#ifndef HEADER
+#define HEADER
 #include <stdio.h>
 #include <sys/wait.h>
 #include <string.h>
@@ -9,3 +11,4 @@
 void loop(void);
 char *readline(void);
 char **splitline(char *l);
+#endif
