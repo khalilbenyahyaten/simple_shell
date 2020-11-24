@@ -14,7 +14,7 @@ do {
 printf("$ ");
 l = readline();
 args = splitline(l);
-status = execute(args);
+stat = execute(args);
 free(l);
 free(args);
 } while (stat);
